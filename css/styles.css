@@ -999,14 +999,25 @@ ol {
   .container {
     max-width: 766px;
   }
-  .header-div-span {}
+
   .address-list {
     flex-direction: column;
     gap: 12px;
   }
 
   .address-link-container {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
     font-size: 12px;
+  }
+
+  .logo {
+    margin-right: 120px;
+  }
+
+  .nav-link-container {
+    margin-right: 0;
   }
 
   .section-effective {
