@@ -118,7 +118,7 @@ ol {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/dectop/hero-dectop.jpg);
   background-color: #2e2f42;
   background-repeat: no-repeat;
   background-position: center;
@@ -472,7 +472,6 @@ ol {
 
 }
 
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -678,3 +677,417 @@ ol {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    max-width: 318px;
+  }
+  .nav-link-container,
+  .address {
+    display: none;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+  }
+
+  .header-mobile-container {
+    position: relative;
+    width: 280px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 72px 16px 24px 16px;
+  }
+
+  .header-mobile-nav {
+    margin-bottom: auto;
+  }
+
+  .header-div-span {
+    display: block;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .header-span-line {
+    height: 2px;
+    width: 17px;
+    background-color: #2f2f37;
+    border-radius: 4px;
+  }
+
+  .header-mobile-wrapper {
+    display: block;
+    transform: translateX(100%);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-mobile-wrapper.is-open {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+
+  .header-mobile-nav-ull {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .menu-close-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .menu-close-button:hover,
+  .menu-close-button:focus {
+    background-color: #404bbf;
+    border: none;
+  }
+
+  .menu-close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .menu-close-button:hover .modal-close-icon,
+  .menu-close-button:focus .modal-close-icon {
+    fill: #fff;
+  }
+
+  .header-mobile-nav-lin {
+    font-size: 36px;
+    font-weight: 700;
+    padding: 0;
+  }
+
+  .header-mobile-nav-lin-active::after {
+    display: none;
+  }
+
+  .address-ull {
+    flex-direction: column-reverse;
+    margin-top: auto;
+    margin-bottom: 48px;
+  }
+
+  .address-lin {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.4px;
+  }
+
+  .adress-phone {
+    color: #4d5ae5;
+  }
+
+  .header-lin {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-lin:hover,
+  .header-lin:focus {
+    background-color: #31d0aa;
+  }
+
+  .header-icon-ull {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-icon-lin {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .section-effective {
+    max-width: 320px;
+    margin-top: 54px;
+    padding: 72px 34px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile/hero-mob.jpg);
+  }
+
+  .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 111%;
+  }
+
+  .about {
+    padding: 96px 0;
+  }
+
+  .rectangle {
+    display: none;
+  }
+
+  .section-title-small {
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .section-title-small-link {
+    width: 100%;
+  }
+
+  .section-title-small-h {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .section-title-small-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+
+  .section-ourteam {
+    padding: 96px 0;
+  }
+
+  .section-title-ourteam-ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+  }
+
+  .section-title-ourteam-link {
+    width: 100%;
+  }
+
+  .our-portfolio {
+    padding: 96px 0;
+  }
+
+  .section-our-portolio-ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-our-portolio-li {
+    width: 100%;
+  }
+
+  .portf-img {
+    width: 100%;
+  }
+
+  .footer-studio-social {
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+  }
+
+  .footer-studio {
+    margin-right: 0;
+  }
+
+  .logo-footer {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-social {
+    margin-right: 0;
+  }
+
+  .footer-text-social {
+    text-align: center;
+  }
+
+  .footer-text-sub {
+    text-align: center;
+  }
+
+
+  .footer-form-sub {
+    flex-direction: column;
+  }
+
+  .footer-button-sub {
+    width: 165px;
+    margin: 0 auto;
+  }
+
+ 
+  .modal {
+    width: 288px;
+    padding: 72px 16px 24px 16px;
+  }
+
+  .check-text {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+  }
+
+  .span-check-icon {
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+  .container {
+    max-width: 766px;
+  }
+  .address-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .address-link-container {
+    font-size: 12px;
+  }
+
+  .section-effective {
+    max-width: 768px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet/hero-tablet.jpg);
+    padding: 112px 0;
+  }
+
+
+  .about {
+    padding: 96px 0;
+  }
+
+  .section-title-small {
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .section-title-small-link {
+    width: calc((100% - 24px) / 2);
+  }
+  .rectangle {
+    display: none;
+  }
+  .section-title-small-h {
+    font-weight: 700;
+    font-size: 36px;
+  }
+  .section-title-small-text {
+    font-weight: 500;
+  }
+
+  .section-ourteam {
+    padding: 96px 0;
+  }
+
+  .section-title-ourteam-ul {
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+
+  .section-title-ourteam-link {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .our-portfolio {
+    padding: 96px 0;
+  }
+
+  .section-our-portolio-ul {
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .section-our-portolio-li {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .footer-studio-social {
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    max-width: 582px;
+  }
+
+  .footer-studio {
+    margin-right: 0;
+  }
+
+  .footer-social {
+    margin-right: 0;
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px) {
+  .section-effective {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile/hero-mob-2x.jpg);
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1157px) {
+  .section-effective {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet/hero-tablet-2x.jpg);
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 1158px) {
+  .section-effective {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/dectop/hero-dectop-2x.jpg);
+  }
+}
