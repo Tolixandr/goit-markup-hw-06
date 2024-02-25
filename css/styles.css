@@ -835,7 +835,7 @@ ol {
 
   .header-icon-ull {
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
   }
 
   .header-icon-lin {
