@@ -291,7 +291,7 @@ ol {
   padding: 120px 0 120px 0;
 }
 .section-our-portolio {
-  margin: 120px 0 72px 0;
+  margin-bottom: 72px;
   color: #2e2f42;
   text-align: center;
   font-size: 36px;
@@ -916,6 +916,7 @@ ol {
 
   .portf-img {
     width: 100%;
+    height: 280px;
   }
 
   .footer-studio-social {
