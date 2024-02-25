@@ -315,7 +315,6 @@ ol {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-  margin-bottom: 120px;
 }
 .section-our-portolio-li {
   width: calc((100% - 48px) / 3);
