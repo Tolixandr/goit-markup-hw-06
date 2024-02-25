@@ -693,7 +693,7 @@ ol {
 }
 .modal-button-send:hover,
 .modal-button-send:focus {
-  
+  background-color: #404bbf;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
