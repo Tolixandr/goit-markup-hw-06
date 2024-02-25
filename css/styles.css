@@ -65,6 +65,8 @@ ol {
   gap: 40px;
   margin-right: 332px;
 }
+
+
 .nav-link {
   display: block;
   padding: 24px 0 24px;
@@ -112,6 +114,14 @@ ol {
 .address-link:hover,
 .address-link:focus {
   color: #404bbf;
+}
+
+.header-div-span {
+  display: none;
+}
+
+.header-mobile-wrapper {
+  display: none;
 }
 .section-effective {
   background-image: linear-gradient(
@@ -988,6 +998,7 @@ ol {
   .container {
     max-width: 766px;
   }
+  .header-div-span {}
   .address-list {
     flex-direction: column;
     gap: 12px;
