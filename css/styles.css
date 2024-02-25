@@ -932,6 +932,7 @@ ol {
   .logo-footer {
     display: block;
     text-align: center;
+    margin: 0 auto 16px auto;
   }
 
   .footer-social {
