@@ -797,6 +797,8 @@ ol {
   }
 
   .address-ull {
+    display: flex;
+    gap: 24px;
     flex-direction: column-reverse;
     margin-top: auto;
     margin-bottom: 48px;
@@ -808,10 +810,11 @@ ol {
     font-weight: 500;
     line-height: 120%;
     letter-spacing: 0.4px;
+    color: #434455;
   }
 
   .adress-phone {
-    color: #434455;
+    color: #4d5ae5;
   }
 
   .header-lin {
