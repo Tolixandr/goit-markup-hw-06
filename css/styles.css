@@ -1011,11 +1011,14 @@ ol {
     gap: 12px;
   }
 
+  .address-link {
+   font-size: 12px;
+  }
+
   .address-link-container {
     align-items: flex-start;
     flex-direction: column;
     gap: 12px;
-    font-size: 12px;
   }
 
   .logo {
